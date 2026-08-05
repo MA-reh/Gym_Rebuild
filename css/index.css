@@ -158,7 +158,111 @@ header>.container .content h4 {
     margin-block: 20px;
 }
 
+/* Services_Section */
 
+#Services{
+    background-image: url("../images/counters_bg.png");
+    background-attachment: fixed;
+    position: relative;
+}
+#Services::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(213, 213, 213, 0.374);
+    backdrop-filter: blur(1px);  
+}
+#Services .container{
+    position: relative;
+}
+#Services .container .titleContainer .mainTitle,
+#Services .container .titleContainer .subTitle{
+    margin-bottom: 10px;
+}
+#Services .container .titleContainer >div h5,
+#Services .container .titleContainer>div h2{
+    text-transform: uppercase;
+}
+#Services .container .titleContainer .mainTitle h2{
+    font-size: 55px;
+    position: relative;
+}
+#Services .container .titleContainer .mainTitle h2::before{
+    content: "";
+    width: 110px;
+    height: 5px;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+#Services .container .titleContainer .mainTitle h2 span,
+#Services .container .titleContainer .subTitle h5{
+    color: var(--accent-color);
+}
+#Services .container .titleContainer .subTitle h5{
+    font-size: 18px;
+}
+#Services .container .serviceBrief p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-block: 30px;
+}
+#Services .container .servicesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#Services .container .servicesContainer .service{
+    width: calc(100%/5);
+}
+#Services .container .servicesContainer .service .box{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+    height: 250px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+#Services .container .servicesContainer .service .box:hover{
+    transform: translateY(-10px);
+}
+#Services .container .servicesContainer .service .box .imgContainer img{
+    width: 80px;
+}
+#Services .container .servicesContainer .service .box .serviceTitle h5{
+    font-size: 20px;
+    text-align: center;
+}
+#Services .container .servicesContainer .service .box .serviceBriefMini{
+    text-align: center;
+}
+#Services .container .servicesContainer .service .box .serviceBriefMini p{
+    line-height: 20px;
+}
+#Services .container .servicesContainer .service .box .serviceShape{
+    width: 60px;
+    height: 10px;
+    background-color: #acacac;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+#Services .container .servicesContainer .service .box:hover .serviceShape{
+    background-color: var(--accent-color);
+}
 
 /* Gallery */
 
@@ -205,3 +309,5 @@ header>.container .content h4 {
     background-position: center;
     background-size: cover;
 }
+
+/* Gallery-End */

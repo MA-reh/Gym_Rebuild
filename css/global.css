@@ -23,7 +23,7 @@ main {
     --bg-color: rgba(189, 23, 37, 1);
     --section-bg-color: #cccccc;
     --primary-color: #F5F5F5;
-    --accent-color: rgba(189, 23, 37, 1);
+    --accent-color: rgb(206, 12, 28);
     --text-c: #050505;
     --text-color: #e0dddd;
     --main-btn-color: #e0dddd;
@@ -40,7 +40,7 @@ main {
     --bg-color: #cccccc;
     --section-bg-color: rgba(189, 23, 37, 1);
     --primary-color: #050505;
-    --accent-color: #dddddd;
+    /* --accent-color: #dddddd;  انا عطلتها يمحمد عشان لسه مش ظبطة*/
 
     --main-btn-color: rgba(189, 23, 37, 1);
     --text-c: #e0dddd;
@@ -64,13 +64,13 @@ section:nth-of-type(odd) {
 #themeColor:checked+main section:nth-of-type(odd) {
     width: 100%;
 
-    background: rgba(189, 23, 37, 1);
+    /* background: rgba(189, 23, 37, 1); انا عطلتها يمحمد عشان لسه مش ظبطة */
 }
 
 section:nth-of-type(even) {
     width: 100%;
 
-    background: rgba(189, 23, 37, 1);
+    /* background: rgba(189, 23, 37, 1); انا عطلتها يمحمد عشان لسه مش ظبطة */
 }
 
 #themeColor:checked+main section:nth-of-type(even) {
