@@ -6,21 +6,31 @@
 
 html {
     scroll-behavior: smooth;
+    perspective: 800px;
 }
 
 body {
     font-family: "Roboto", sans-serif;
 }
 
+:root {
+    --degree-bg-odd: 145deg;
+    --degree-bg-even: -145deg;
+}
+
 main {
 
-    --bg-color: #42161b;
-    --section-bg-color: #3D0F1F;
+    --bg-color: rgba(189, 23, 37, 1);
+    --section-bg-color: #cccccc;
     --primary-color: #F5F5F5;
-    --accent-color: #b9254f;
+    --accent-color: rgba(189, 23, 37, 1);
+    --text-c: #050505;
     --text-color: #e0dddd;
+    --main-btn-color: #e0dddd;
+
     --text-color1: #DDDDDD;
     --text-color2: #3a3a3a;
+    --text-shadow-color: rgba(189, 23, 37, 1);
 
     height: 5000px;
     background-color: var(--bg-color);
@@ -28,15 +38,47 @@ main {
 
 #themeColor:checked+main {
     --bg-color: #cccccc;
-    --section-bg-color: #b9254f;
+    --section-bg-color: rgba(189, 23, 37, 1);
     --primary-color: #050505;
-    --accent-color: #670D2F;
+    --accent-color: #dddddd;
+
+    --main-btn-color: rgba(189, 23, 37, 1);
+    --text-c: #e0dddd;
+
     --text-color1: #3a3a3a;
     --text-color2: #c9c9c9;
-    --text-shadow-color1: ;
-    --text-shadow-color2: ;
-
+    --text-shadow-color: #050505;
+    --text-shadow-color2: #050505;
 }
+
+section {
+    padding: 50px 0;
+}
+
+section:nth-of-type(odd) {
+    width: 100%;
+
+    background: #CCCCCC;
+}
+
+#themeColor:checked+main section:nth-of-type(odd) {
+    width: 100%;
+
+    background: rgba(189, 23, 37, 1);
+}
+
+section:nth-of-type(even) {
+    width: 100%;
+
+    background: rgba(189, 23, 37, 1);
+}
+
+#themeColor:checked+main section:nth-of-type(even) {
+    width: 100%;
+
+    background: #CCCCCC;
+}
+
 
 h1,
 h2,
@@ -57,8 +99,22 @@ img {
 }
 
 .text-color {
-    color: var(--accent-color);
+    color: var(--text-c);
 }
+
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title h2 {
+    font-size: 35px;
+    font-weight: 800;
+    color: var(--accent-color);
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+}
+
 
 .main-btn {
     --duration: 0.5s;
@@ -128,7 +184,7 @@ img {
 }
 
 .main-btn:hover span {
-    color: var(--text-color);
+    color: var(--main-btn-color);
     transition: color ease-out var(--duration) 0.7s;
 }
 
