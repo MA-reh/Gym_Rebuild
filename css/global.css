@@ -33,11 +33,11 @@ main {
     --text-shadow-color: rgba(189, 23, 37, 1);
 
     height: 5000px;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
 }
 
 #themeColor:checked+main {
-    --bg-color: #cccccc;
+    /* --bg-color: #cccccc; */
     --section-bg-color: rgba(189, 23, 37, 1);
     --primary-color: #050505;
     /* --accent-color: #dddddd;  انا عطلتها يمحمد عشان لسه مش ظبطة*/
@@ -58,7 +58,7 @@ section {
 section:nth-of-type(odd) {
     width: 100%;
 
-    background: #CCCCCC;
+    /* background: #CCCCCC; */
 }
 
 #themeColor:checked+main section:nth-of-type(odd) {
@@ -76,7 +76,7 @@ section:nth-of-type(even) {
 #themeColor:checked+main section:nth-of-type(even) {
     width: 100%;
 
-    background: #CCCCCC;
+    /* background: #CCCCCC; */
 }
 
 

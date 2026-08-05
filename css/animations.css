@@ -1,0 +1,8 @@
+@keyframes light {
+    0%{
+        background-color: var(--accent-color);
+    }
+    100%{
+        background-color: #acacac;
+    }
+}
