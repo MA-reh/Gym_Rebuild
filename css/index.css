@@ -831,3 +831,61 @@ header > .container .content h4 {
   color: #515256;
   font-weight: 600;
 }
+/* contact */
+#Contact_us .container .content {
+  display: flex;
+}
+#Contact_us .container .content .part1,
+#Contact_us .container .content .part2 {
+  width: 50%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 450px;
+  margin: auto;
+}
+
+label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--red-dark);
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+#Contact_us .container .content .part2 {
+  height: 100%;
+}
+#Contact_us .container .content .part2 iframe {
+  width: 100%;
+  height: 100%;
+}
+/* footer */
+footer {
+  background-color: var(--ink);
+  color: var(--text-color);
+  text-align: center;
+}
+footer p {
+  padding: 15px 10px;
+}
