@@ -29,6 +29,7 @@ main {
   --text-color1: #dddddd;
   --text-color2: #3a3a3a;
   --text-shadow-color: rgba(189, 23, 37, 1);
+  --box-shadow-color: rgba(255, 0, 0, 0.5);
   height: 5000px;
   /* background-color: var(--bg-color); */
   /* feedback section */
@@ -42,7 +43,6 @@ main {
   --panel: #f7f6f4;
   --red: #e31e1e;
   --red-dark: #a81212;
-  --ink: #17181b;
   --muted: #74767e;
   --line: #dcd1c4;
 }

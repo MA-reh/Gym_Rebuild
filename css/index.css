@@ -333,6 +333,88 @@ header > .container .content h4 {
   line-height: 30px;
   margin-block: 30px;
 }
+#Classes .container .classContent {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#Classes .container .classContent .item {
+  width: calc(100% / 3);
+  margin-bottom: 40px;
+}
+#Classes .container .classContent .item .card {
+  width: 90%;
+  margin: auto;
+  position: relative;
+}
+#Classes .container .classContent .item .card .image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px var(--ink);
+}
+#Classes .container .classContent .item .card .image img {
+  display: block;
+  transition-duration: 1s;
+}
+#Classes .container .classContent .item .card:hover .image img {
+  transform: scale(1.1);
+}
+#Classes .container .classContent .item .card .image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+#Classes .container .classContent .item .card .info {
+  position: absolute;
+  background-color: var(--ink);
+  bottom: -25px;
+  border-radius: 20px;
+  left: 50%;
+  width: 95%;
+  transform: translateX(-50%);
+  color: var(--text-color);
+  text-align: center;
+  padding: 10px 5px;
+  border: 2px solid var(--red-dark);
+  transition-duration: 1s;
+  padding-inline: 10px;
+}
+#Classes .container .classContent .item .card:hover .info {
+  bottom: -35px;
+}
+#Classes .container .classContent .item .card .info .className {
+  font-size: 20px;
+  text-shadow: 1px 1px var(--text-shadow-color);
+}
+#Classes .container .classContent .item .card .info h6 {
+  margin: 10px 0px;
+}
+#Classes .container .classContent .item .card .info button {
+  padding: 5px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--text-color);
+  border-radius: 10px;
+  transition-duration: 1s;
+  background-color: var(--red-dark);
+}
+#Classes .container .classContent .item .card:hover .info button {
+  background-color: var(--red);
+}
+#Classes .container .classContent .item .card .info button i {
+  transition-duration: 1s;
+}
+#Classes .container .classContent .item .card .info button:hover i {
+  margin-left: 10px;
+}
 
 /* Trainers */
 
