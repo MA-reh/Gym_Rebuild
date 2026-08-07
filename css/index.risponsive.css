@@ -169,6 +169,11 @@
         font-size: 25px;
     }
 
+    #Trainers .container .trainersContainer .trainer .box {
+        width: 350px;
+        margin: auto;
+    }
+
 }
 
 @media (min-width: 573px) and (max-width: 1300px) {
@@ -208,6 +213,21 @@
 
     #Trainers .container .trainersContainer .trainer {
         width: 50%;
+    }
+    #Trainers .container .trainersContainer .trainer {
+        width: fit-content;
+    }
+    #Trainers .container .trainersContainer .trainer .box{
+        width: 400px;
+        margin: auto;
+    }
+    #Trainers .container .trainersContainer .trainer .box .trainerSubTracks {
+        gap: 5px;
+    }
+    #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
     }
 
 
@@ -253,6 +273,13 @@
         width: calc(100% / 3);
     }
 
+    #Trainers .container .trainersContainer .trainer {
+        width: 45%;
+    }
+    #Trainers .container .trainersContainer .trainer .box {
+        width: auto;
+        margin: auto;
+    }
     #Trainers .container .trainersContainer .trainer {
         width: 45%;
     }
@@ -340,5 +367,48 @@
     #Services .container .servicesContainer .service .box {
         height: 300px;
     }
+    #Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
+        font-size: 9px;
+    }
+    #Trainers .container .trainersContainer .trainer .box .trainerName h3 {
+    font-size: 24px;
+    }   
+    #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 
 }
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+    /* Navbar */
+    header nav .container .part-left {
+        width: 25%;
+    }
+
+    #Services .container .servicesContainer .service {
+        width: calc(100% /5);
+
+    }
+
+    #Services .container .servicesContainer .service .box {
+        height: 300px;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
+        font-size: 12px;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box .trainerName h3 {
+        font-size: 24px;
+    }
+
+    #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+ } 
