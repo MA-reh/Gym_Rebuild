@@ -145,6 +145,20 @@
   .fb-stats-row {
     gap: 28px;
   }
+  /* contact */
+  #Contact_us .container .content {
+    flex-direction: column-reverse;
+  }
+  #Contact_us .container .content .part2 {
+    margin-bottom: 30px;
+  }
+  #Contact_us .container .content .part1,
+  #Contact_us .container .content .part2 {
+    width: 100%;
+  }
+  #Contact_us .container .content .part2 .map iframe {
+    min-height: 400px;
+  }
 }
 
 @media (min-width: 368px) and (max-width: 1300px) {
@@ -202,7 +216,7 @@
     width: calc(100% / 2);
   }
 
-   /* Section_Classes */
+  /* Section_Classes */
   #Classes .container .classContent .item {
     width: 50%;
   }
@@ -287,6 +301,13 @@
   #Gallery .images .cell:nth-of-type(4) {
     grid-row: span 2;
   }
+  /* contact */
+  #Contact_us form {
+    width: 60%;
+  }
+  #Contact_us .container .content .part2 .map {
+    width: 60%;
+  }
 }
 
 @media (min-width: 990px) and (max-width: 1300px) {
@@ -324,6 +345,24 @@
   header > .container .content h1 {
     font-size: 55px;
   }
+  /* contact */
+  #Contact_us .container .content {
+    flex-direction: row;
+  }
+  #Contact_us form {
+    width: 90%;
+  }
+  #Contact_us .container .content .part2 {
+    margin-bottom: 0px;
+  }
+  #Contact_us .container .content .part1,
+  #Contact_us .container .content .part2 {
+    width: 50%;
+  }
+  #Contact_us .container .content .part2 .map {
+    width: 90%;
+  }
+
 }
 
 @media (min-width: 1178px) and (max-width: 1300px) {
@@ -380,9 +419,9 @@
   #Services .container .servicesContainer .service .box {
     height: 300px;
   }
-    /* Section_Classes */
+  /* Section_Classes */
   #Classes .container .classContent .item {
-    width: calc(100%/3);
+    width: calc(100% / 3);
   }
 
   #Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
