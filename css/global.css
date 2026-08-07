@@ -11,6 +11,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  
 }
 
 :root {
@@ -35,16 +36,12 @@ main {
   /* feedback section */
   --bg-feedback: #faf8f6;
   --panel-light: #24262b;
-  --ink: #17181b;
-  --muted: #74767e;
+  --ink: #3b2e34;
+  --muted: #6e6e6e;
   --line: #e7e2dc;
   --ring-track: #38393e;
-  --bg: #faf8f6;
-  --panel: #f7f6f4;
   --red: #e31e1e;
   --red-dark: #a81212;
-  --muted: #74767e;
-  --line: #dcd1c4;
 }
 
 #themeColor:checked + main {
