@@ -27,13 +27,25 @@ main {
     --text-c: #050505;
     --text-color: #e0dddd;
     --main-btn-color: #e0dddd;
-
     --text-color1: #DDDDDD;
     --text-color2: #3a3a3a;
     --text-shadow-color: rgba(189, 23, 37, 1);
-
     height: 5000px;
     /* background-color: var(--bg-color); */
+    /* feedback section */
+    --bg-feedback: #FAF8F6;
+    --panel-light: #24262B;
+    --ink: #17181B;
+    --muted: #74767E;
+    --line: #E7E2DC;
+    --ring-track: #38393E;
+    --bg: #FAF8F6;
+    --panel: #f7f6f4;
+    --red: #E31E1E;
+    --red-dark: #A81212;
+    --ink: #17181B;
+    --muted: #74767E;
+    --line: #dcd1c4;
 }
 
 #themeColor:checked+main {
@@ -256,6 +268,6 @@ img {
 }
 
 .second-main-btn:hover span {
-    color: var(--text-color);
+    color: var(--text-color1);
     transition: color ease-out var(--duration) 0.7s;
 }

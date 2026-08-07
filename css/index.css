@@ -160,13 +160,15 @@ header>.container .content h4 {
 
 /* Services_Section */
 
-#Services,#Trainers{
+#Services,
+#Trainers {
     background-image: url("../images/counters_bg.png");
     background-attachment: fixed;
     position: relative;
 }
+
 #Services::before,
-#Trainers::before{
+#Trainers::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -175,22 +177,27 @@ header>.container .content h4 {
     left: 0;
     background-color: rgba(237, 237, 237, 0.374);
 }
-#Services .container{
+
+#Services .container {
     position: relative;
 }
+
 #Services .container .titleContainer .mainTitle,
-#Services .container .titleContainer .subTitle{
+#Services .container .titleContainer .subTitle {
     margin-bottom: 10px;
 }
-#Services .container .titleContainer >div h5,
-#Services .container .titleContainer>div h2{
+
+#Services .container .titleContainer>div h5,
+#Services .container .titleContainer>div h2 {
     text-transform: uppercase;
 }
-#Services .container .titleContainer .mainTitle h2{
+
+#Services .container .titleContainer .mainTitle h2 {
     font-size: 55px;
     position: relative;
 }
-#Services .container .titleContainer .mainTitle h2::before{
+
+#Services .container .titleContainer .mainTitle h2::before {
     content: "";
     width: 110px;
     height: 5px;
@@ -201,28 +208,34 @@ header>.container .content h4 {
     border-radius: 5px;
     animation: light 2s ease-in-out alternate infinite;
 }
+
 #Services .container .titleContainer .mainTitle h2 span,
-#Services .container .titleContainer .subTitle h5{
+#Services .container .titleContainer .subTitle h5 {
     color: var(--accent-color);
 }
-#Services .container .titleContainer .subTitle h5{
+
+#Services .container .titleContainer .subTitle h5 {
     font-size: 18px;
 }
-#Services .container .serviceBrief p{
+
+#Services .container .serviceBrief p {
     font-size: 20px;
     line-height: 30px;
     margin-block: 30px;
 }
-#Services .container .servicesContainer{
+
+#Services .container .servicesContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-#Services .container .servicesContainer .service{
+
+#Services .container .servicesContainer .service {
     width: calc(100%/5);
 }
-#Services .container .servicesContainer .service .box{
+
+#Services .container .servicesContainer .service .box {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -238,30 +251,37 @@ header>.container .content h4 {
     transition: all 0.3s ease-in-out;
     cursor: pointer;
 }
-#Services .container .servicesContainer .service .box:hover{
+
+#Services .container .servicesContainer .service .box:hover {
     transform: translateY(-10px);
 }
-#Services .container .servicesContainer .service .box .imgContainer img{
+
+#Services .container .servicesContainer .service .box .imgContainer img {
     width: 80px;
 }
-#Services .container .servicesContainer .service .box .serviceTitle h5{
+
+#Services .container .servicesContainer .service .box .serviceTitle h5 {
     font-size: 20px;
     text-align: center;
 }
-#Services .container .servicesContainer .service .box .serviceBriefMini{
+
+#Services .container .servicesContainer .service .box .serviceBriefMini {
     text-align: center;
 }
-#Services .container .servicesContainer .service .box .serviceBriefMini p{
+
+#Services .container .servicesContainer .service .box .serviceBriefMini p {
     line-height: 20px;
 }
-#Services .container .servicesContainer .service .box .serviceShape{
+
+#Services .container .servicesContainer .service .box .serviceShape {
     width: 60px;
     height: 10px;
     background-color: #acacac;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
 }
-#Services .container .servicesContainer .service .box:hover .serviceShape{
+
+#Services .container .servicesContainer .service .box:hover .serviceShape {
     background-color: var(--accent-color);
 }
 
@@ -269,10 +289,11 @@ header>.container .content h4 {
 
 /* Trainers */
 
-#Trainers .container{
+#Trainers .container {
     position: relative;
 }
-#Trainers .container .title{
+
+#Trainers .container .title {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -280,26 +301,31 @@ header>.container .content h4 {
     flex-direction: column;
     gap: 10px;
 }
+
 #Trainers .container .title .subTitle,
-#Trainers .container .title .mainTitle{
+#Trainers .container .title .mainTitle {
     text-align: center;
 }
-#Trainers .container .title .mainTitle h2{
+
+#Trainers .container .title .mainTitle h2 {
     color: black;
     font-size: 55px;
 }
-#Trainers .container .title .mainTitle h2 span{
+
+#Trainers .container .title .mainTitle h2 span {
     color: var(--accent-color);
-    
+
 }
-#Trainers .container .title .subTitle h5{
+
+#Trainers .container .title .subTitle h5 {
     position: relative;
     color: var(--accent-color);
     width: fit-content;
     font-size: 18px;
 }
+
 #Trainers .container .title .subTitle h5::before,
-#Trainers .container .title .subTitle h5::after{
+#Trainers .container .title .subTitle h5::after {
     content: "";
     width: 20px;
     height: 5px;
@@ -309,17 +335,21 @@ header>.container .content h4 {
 
     background-color: var(--accent-color);
 }
-#Trainers .container .title .subTitle h5::before{
+
+#Trainers .container .title .subTitle h5::before {
     left: -20%
-}   
-#Trainers .container .title .subTitle h5::after{
+}
+
+#Trainers .container .title .subTitle h5::after {
     right: -20%;
 }
-#Trainers .container .title .brieftitle p{
+
+#Trainers .container .title .brieftitle p {
     line-height: 25px;
     position: relative;
 }
-#Trainers .container .title .brieftitle p::after{
+
+#Trainers .container .title .brieftitle p::after {
     content: "";
     width: 100px;
     height: 5px;
@@ -331,17 +361,20 @@ header>.container .content h4 {
     border-radius: 10px;
     animation: light 2s ease-in-out alternate infinite;
 }
-#Trainers .container .trainersContainer{
+
+#Trainers .container .trainersContainer {
     padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-#Trainers .container .trainersContainer .trainer{
-    width: calc(100% / 4 );
+
+#Trainers .container .trainersContainer .trainer {
+    width: calc(100% / 4);
 }
-#Trainers .container .trainersContainer .trainer .box{
+
+#Trainers .container .trainersContainer .trainer .box {
     background-color: white;
     display: flex;
     justify-content: center;
@@ -351,9 +384,10 @@ header>.container .content h4 {
     padding-bottom: 30px;
     border-radius: 10px;
     -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
-        -moz-box-shadow: 3px 3px 10px 3px #dddddd;
+    -moz-box-shadow: 3px 3px 10px 3px #dddddd;
 }
-#Trainers .container .trainersContainer .trainer .box .imgContainer{
+
+#Trainers .container .trainersContainer .trainer .box .imgContainer {
     height: 200px;
     width: 200px;
     border: 2px solid var(--accent-color);
@@ -367,18 +401,22 @@ header>.container .content h4 {
     background-attachment: fixed;
     margin-bottom: 10px;
 }
-#Trainers .container .trainersContainer .trainer .box .imgContainer img{
+
+#Trainers .container .trainersContainer .trainer .box .imgContainer img {
     width: 90%;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerName h3{
+
+#Trainers .container .trainersContainer .trainer .box .trainerName h3 {
     font-size: 25px;
     margin-bottom: 10px;
 }
+
 #Trainers .container .trainersContainer .trainer .box .trainerTrack h5 {
     font-size: 15px;
     color: var(--accent-color);
     margin-bottom: 10px;
 }
+
 #Trainers .container .trainersContainer .trainer .box .trainerRate {
     display: flex;
     justify-content: center;
@@ -386,51 +424,61 @@ header>.container .content h4 {
     gap: 5px;
     margin-bottom: 10px;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerRate ul{
+
+#Trainers .container .trainersContainer .trainer .box .trainerRate ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerRate ul li{
+
+#Trainers .container .trainersContainer .trainer .box .trainerRate ul li {
     list-style: none;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerRate ul li i{
+
+#Trainers .container .trainersContainer .trainer .box .trainerRate ul li i {
     color: var(--accent-color);
 }
-#Trainers .container .trainersContainer .trainer .box .trainerRate .rateNumber{
+
+#Trainers .container .trainersContainer .trainer .box .trainerRate .rateNumber {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerSubTracks{
+
+#Trainers .container .trainersContainer .trainer .box .trainerSubTracks {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track{
+
+#Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
     padding: 10px;
     border-radius: 20px;
     -webkit-box-shadow: 3px 3px 10px 3px #dddddd;
     -moz-box-shadow: 3px 3px 10px 3px #dddddd;
     margin-bottom: 10px;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia{
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerSocialMedia{
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerSocialMedia {
     color: var(--accent-color);
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerSocialMedia i{
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerSocialMedia i {
     font-size: 28px;
     cursor: pointer;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button.bookSession{
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button.bookSession {
     border: none;
     background-color: var(--accent-color);
     color: white;
@@ -441,10 +489,12 @@ header>.container .content h4 {
     position: relative;
     overflow: hidden;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button.bookSession span{
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button.bookSession span {
     position: relative;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button.bookSession::before{
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button.bookSession::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -453,9 +503,11 @@ header>.container .content h4 {
     left: 0;
     transition: all 0.2s ease-in-out;
 }
-#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button:hover::before{
-background-color: rgb(163, 2, 2);
+
+#Trainers .container .trainersContainer .trainer .box .trainerMedia .trainerBook button:hover::before {
+    background-color: rgb(163, 2, 2);
 }
+
 /* Gallery */
 
 #Gallery .images {
@@ -503,3 +555,149 @@ background-color: rgb(163, 2, 2);
 }
 
 /* Gallery-End */
+/*
+!FeedBack
+*/
+
+
+.feedback-section {
+    background: var(--bg-feedback);
+    background-image:
+        radial-gradient(700px 380px at 90% -10%, rgba(227, 30, 30, 0.07), transparent 60%),
+        repeating-linear-gradient(90deg, rgba(23, 24, 27, 0.025) 0px, rgba(23, 24, 27, 0.025) 1px, transparent 1px, transparent 3px);
+    color: var(--ink);
+    overflow: hidden;
+    position: relative;
+}
+
+/* ---------- Header ---------- */
+.fb-heading {
+    font-size: clamp(36px, 5.4vw, 64px);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.fb-heading span {
+    color: #fff;
+    background: var(--accent-color);
+    padding: 0 12px;
+    display: inline-block;
+    transform: skewX(-15deg);
+}
+
+.fb-sub {
+    margin-top: 15px;
+    font-size: 15px;
+
+    color: var(--muted);
+}
+
+.fb-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    border-top: 1px solid var(--line);
+}
+
+.fb-stat b {
+    display: block;
+    font-size: 30px;
+    color: var(--ink);
+    font-weight: 700;
+}
+
+.fb-stat span {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+}
+
+/* ---------- Barbell rail ---------- */
+.plates-grid {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.plate {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background:#f0dede79;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 32px 24px;
+    transition: transform 0.3s cubic-bezier(.2,.8,.2,1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.plate:hover {
+    transform: translateY(-10px) rotate(-2deg);
+    border-color: rgba(199, 179, 179, 0.35);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 30px 30px -15px;
+}
+
+.plate:nth-child(2):hover {
+    transform: translateY(-10px) rotate(2deg);
+}
+
+.plate-stat {
+    font-size: 36px;
+    color: var(--red);
+    line-height: 1;
+}
+
+.plate-stat-caption {
+    margin-top: 8px;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #2d303a;
+}
+
+.plate-divider {
+    margin: 22px 0 20px;
+    height: 1px;
+    background: rgba(214, 9, 9, 0.08);
+}
+
+.plate-quote {
+    position: relative;
+    font-style: italic;
+    font-size: 14px;
+    color: #121424;
+    font-weight: 500;
+}
+
+.plate-person {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--red), var(--red-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5e7e7;
+    font-weight: 800;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.plate-name {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: #551515;
+}
+
+.plate-goal {
+    font-size: 11px;
+    color: #515256;
+    font-weight: 600;
+}
