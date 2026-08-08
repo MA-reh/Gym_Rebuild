@@ -11,27 +11,13 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  
-}
 
-:root {
-  --degree-bg-odd: 145deg;
-  --degree-bg-even: -145deg;
 }
 
 main {
-  --bg-color: rgba(189, 23, 37, 1);
-  --section-bg-color: #cccccc;
   --primary-color: #f5f5f5;
-  --accent-color: rgb(206, 12, 28);
-  --text-c: #050505;
   --text-color: #e0dddd;
-  --main-btn-color: #e0dddd;
-  --text-color1: #dddddd;
-  --text-color2: #3a3a3a;
-  --text-shadow-color: rgba(189, 23, 37, 1);
-  --box-shadow-color: rgba(255, 0, 0, 0.5);
-  /* background-color: var(--bg-color); */
+
   /* feedback section */
   --bg-feedback: #faf8f6;
   --panel-light: #24262b;
@@ -41,49 +27,18 @@ main {
   --ring-track: #38393e;
   --red: #e31e1e;
   --red-dark: #a81212;
+  --red-border: rgba(227, 30, 30, 0.45);
+
 }
 
-#themeColor:checked + main {
-  /* --bg-color: #cccccc; */
-  --section-bg-color: rgba(189, 23, 37, 1);
-  --primary-color: #050505;
-  /* --accent-color: #dddddd;  انا عطلتها يمحمد عشان لسه مش ظبطة*/
-
-  --main-btn-color: rgba(189, 23, 37, 1);
-  --text-c: #e0dddd;
-
-  --text-color1: #3a3a3a;
-  --text-color2: #c9c9c9;
-  --text-shadow-color: #050505;
-  --text-shadow-color2: #050505;
+#themeColor:checked+main {
+  --red: rgb(37, 34, 206);
+  --red-dark: rgb(9, 18, 95);
+  --red-border: rgba(9, 18, 95, 0.45);
 }
 
 section {
   padding: 50px 0;
-}
-
-section:nth-of-type(odd) {
-  width: 100%;
-
-  /* background: #CCCCCC; */
-}
-
-#themeColor:checked + main section:nth-of-type(odd) {
-  width: 100%;
-
-  /* background: rgba(189, 23, 37, 1); انا عطلتها يمحمد عشان لسه مش ظبطة */
-}
-
-section:nth-of-type(even) {
-  width: 100%;
-
-  /* background: rgba(189, 23, 37, 1); انا عطلتها يمحمد عشان لسه مش ظبطة */
-}
-
-#themeColor:checked + main section:nth-of-type(even) {
-  width: 100%;
-
-  /* background: #CCCCCC; */
 }
 
 h1,
@@ -108,18 +63,48 @@ img {
   color: var(--text-c);
 }
 
-.title {
-  text-align: center;
-  margin-bottom: 30px;
+.titleContainer .mainTitle,
+.titleContainer .subTitle {
+  margin-bottom: 10px;
 }
 
-.title h2 {
-  font-size: 35px;
-  font-weight: 800;
-  color: var(--accent-color);
-  letter-spacing: 1.5px;
-  text-transform: capitalize;
+.titleContainer>div h5,
+.titleContainer>div h2 {
+  text-transform: uppercase;
 }
+
+.titleContainer .mainTitle h2 {
+  font-size: 55px;
+  position: relative;
+}
+
+.titleContainer .mainTitle h2::before {
+  content: "";
+  width: 110px;
+  height: 5px;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  background-color: var(--red);
+  border-radius: 5px;
+  animation: light 2s ease-in-out alternate infinite;
+}
+
+.titleContainer .mainTitle h2 span,
+.titleContainer .subTitle h5 {
+  color: var(--red);
+}
+
+.titleContainer .subTitle h5 {
+  font-size: 18px;
+}
+
+.classBrief p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-block: 30px;
+}
+
 
 .main-btn {
   --duration: 0.5s;
@@ -133,7 +118,7 @@ img {
   font-size: 20px;
   overflow: hidden;
   border-radius: 7px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--red);
   transition: border var(--duration);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -147,7 +132,7 @@ img {
   height: 25%;
   display: block;
   position: absolute;
-  background-color: var(--accent-color);
+  background-color: var(--red);
   transition:
     all linear var(--duration) var(--duration),
     height linear var(--duration);
@@ -166,7 +151,7 @@ img {
 .main-btn span {
   position: relative;
   z-index: 100;
-  color: var(--accent-color);
+  color: var(--red);
   font-weight: 700;
   font-size: 18px;
   transition: color ease-out var(--duration) 0.1s;
@@ -189,7 +174,7 @@ img {
 }
 
 .main-btn:hover span {
-  color: var(--main-btn-color);
+  color: #fff;
   transition: color ease-out var(--duration) 0.7s;
 }
 
@@ -205,7 +190,7 @@ img {
   font-size: 20px;
   overflow: hidden;
   border-radius: 7px;
-  border: 2px solid var(--accent-color);
+  border: 2px solid var(--red);
   transition: border var(--duration);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -219,7 +204,7 @@ img {
   height: 100%;
   display: block;
   position: absolute;
-  background-color: var(--accent-color);
+  background-color: var(--red);
   transition:
     all linear var(--duration) var(--duration),
     width linear var(--duration);
@@ -238,7 +223,7 @@ img {
 .second-main-btn span {
   position: relative;
   z-index: 100;
-  color: var(--accent-color);
+  color: var(--red);
   font-weight: 700;
   font-size: 18px;
   transition: color ease-out var(--duration) 0.1s;

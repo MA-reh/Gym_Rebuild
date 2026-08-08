@@ -1,0 +1,537 @@
+@media (max-width: 1300px) {
+  .rail-collar.left {
+    left: 2px;
+  }
+
+  .rail-collar.right {
+    right: 2px;
+  }
+
+  :root {
+    --degree-bg-odd: 180deg;
+    --degree-bg-even: -180deg;
+  }
+
+  /* Global */
+  .titleContainer .mainTitle h2 {
+    font-size: 45px;
+  }
+
+  header nav {
+    padding: 10px 0;
+  }
+
+  .container {
+    width: 90%;
+    padding: 10px 0;
+  }
+
+  .main-btn {
+    padding: 8px 16px;
+  }
+
+  .main-btn span {
+    font-size: 16px;
+  }
+
+  /* Navbar */
+  header nav .container .part-left {
+    width: 60%;
+  }
+
+  header nav .container .part-right label[for="burgerBtn"] {
+    border: 2px solid var(--red);
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 0 8px;
+    cursor: pointer;
+  }
+
+  header nav .container .part-right label[for="burgerBtn"] span {
+    content: "";
+    display: block;
+    background-color: var(--red);
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+  }
+
+  header nav .container .part-right .box {
+    height: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    width: 90%;
+    transform: translateX(-50%);
+    transition-duration: 0.5s;
+  }
+
+  header nav .container .part-right input:checked+.box {
+    height: 375px;
+  }
+
+  header nav .container .part-right .box ul {
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  /* Header */
+  header>.container .content h1 {
+    font-size: 30px;
+  }
+
+  header>.container .content h4 {
+    font-size: 22px;
+  }
+
+  /* Section_Header */
+  #Services .container .servicesContainer {
+    flex-wrap: wrap;
+  }
+
+  #Services .container .servicesContainer .service {
+    width: 100%;
+  }
+
+  #Services .container .servicesContainer .service .box {
+    height: auto;
+    max-width: 290px;
+    margin: auto;
+  }
+
+  /* Section_Classes */
+  #Classes .container .classContent .item {
+    width: 100%;
+  }
+
+  /* Section_Trainer */
+  #Trainers .container .trainersContainer {
+    gap: 20px 0;
+    flex-wrap: wrap;
+  }
+
+  #Trainers .container .trainersContainer .trainer {
+    width: 100%;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerSubTracks {
+    font-size: 14px;
+  }
+
+  /* Gallery */
+  #Gallery .images {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 300px);
+    width: 60%;
+    min-width: 280px;
+    margin: auto;
+  }
+
+  #Gallery .images .cell:nth-of-type(1),
+  #Gallery .images .cell:nth-of-type(4) {
+    grid-row: revert-rule;
+  }
+
+  /* feedback */
+  #FeedBack .container .fb-container {
+    padding: 0 18px;
+  }
+
+  #FeedBack .container .plates-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #FeedBack .container .fb-stats-row {
+    gap: 28px;
+  }
+
+  /* contact */
+  #Contact_us .container .content {
+    flex-direction: column-reverse;
+  }
+
+  #Contact_us .container .content .part2 {
+    margin-bottom: 30px;
+  }
+
+  #Contact_us .container .content .part1,
+  #Contact_us .container .content .part2 {
+    width: 100%;
+  }
+
+  #Contact_us .container .content .part2 .map iframe {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: 368px) and (max-width: 1300px) {
+  /* Global */
+
+  /* Navbar */
+  header nav .container .part-left {
+    width: 50%;
+  }
+
+  /* Header */
+  header>.container .content h1 {
+    font-size: 35px;
+  }
+
+  header>.container .content h4 {
+    font-size: 25px;
+  }
+
+  /* Trainers */
+  #Trainers .container .trainersContainer .trainer .box {
+    width: 350px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 573px) and (max-width: 1300px) {
+
+  /* Global */
+  .main-btn {
+    padding: 10px 20px;
+  }
+
+  .main-btn span {
+    font-size: 17px;
+  }
+
+  /* Navbar */
+  header nav .container .part-left {
+    width: 30%;
+  }
+
+  header nav .container .part-right .box ul {
+    flex-direction: column;
+    gap: 10px 0;
+  }
+
+  header nav .container .part-right .box ul li {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #Services .container .servicesContainer {
+    gap: 20px 0;
+  }
+
+  #Services .container .servicesContainer .service {
+    width: calc(100% / 2);
+  }
+
+  #Services .container .servicesContainer .service .box {
+    max-width: 240px;
+    height: 250px;
+  }
+
+  /* Section_Classes */
+  #Classes .container .classContent .item {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 400px;
+  }
+
+  /* Trainers */
+  #Trainers .container .trainersContainer .trainer {
+    margin: auto;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box {
+    width: 400px;
+    margin: auto;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerSubTracks {
+    gap: 5px;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* Header */
+  header>.container .content h1 {
+    font-size: 45px;
+  }
+
+  header>.container .content h4 {
+    font-size: 30px;
+  }
+
+  /*feedback*/
+  #FeedBack .container .plates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1300px) {
+  /* Global */
+
+  /* Navbar */
+
+  header nav .container .part-right .box ul {
+    justify-content: start;
+  }
+
+  header nav .container .part-right .box ul li {
+    width: calc(100% / 3);
+  }
+
+  /* Header */
+  header>.container .content h1 {
+    font-size: 50px;
+  }
+
+  header>.container .content h4 {
+    font-size: 30px;
+  }
+
+  #Services .container .servicesContainer .service {
+    width: calc(100% / 3);
+  }
+
+  #Services .container .servicesContainer .service .box {
+    max-width: 220px;
+  }
+
+  /* Section_Classes */
+  #Classes .container .classContent .item {
+    width: 50%;
+  }
+
+
+  #Trainers .container .trainersContainer {
+    gap: 25px 25px;
+    flex-wrap: wrap;
+  }
+
+  #Trainers .container .trainersContainer .trainer {
+    gap: 0;
+    width: 50%;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box {
+    width: auto;
+    margin: auto;
+  }
+
+  #Trainers .container .trainersContainer .trainer {
+    width: 45%;
+  }
+
+  /* Gallery */
+  #Gallery .images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    width: initial;
+  }
+
+  #Gallery .images .cell:nth-of-type(1),
+  #Gallery .images .cell:nth-of-type(4) {
+    grid-row: span 2;
+  }
+
+  /* contact */
+  #Contact_us form {
+    width: 60%;
+  }
+
+  #Contact_us .container .content .part2 .map {
+    width: 60%;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1300px) {
+
+  /* Global */
+  .main-btn {
+    padding: 12px 24px;
+  }
+
+  .main-btn span {
+    font-size: 18px;
+  }
+
+  /* Navbar */
+  header nav .container .part-right label[for="burgerBtn"] {
+    display: none;
+  }
+
+  header nav .container .part-right .box {
+    position: initial;
+    transform: initial;
+    height: max-content;
+    width: 100%;
+    transition: none;
+  }
+
+  header nav .container .part-right,
+  header nav .container .part-right .box {
+    overflow: hidden;
+    transition-duration: 0s;
+  }
+
+  header nav .container .part-right input:checked+.box {
+    height: max-content;
+  }
+
+  header nav .container .part-right .box ul {
+    flex-direction: row;
+    background-color: transparent;
+    border: none;
+    flex-wrap: nowrap;
+    transition: none;
+  }
+
+  /* Header */
+
+  header>.container .content h1 {
+    font-size: 55px;
+  }
+
+  #Services .container .servicesContainer .service .box {
+    max-width: 280px;
+  }
+
+  /*feedback*/
+  #FeedBack .container .plates-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* contact */
+  #Contact_us .container .content {
+    flex-direction: row;
+  }
+
+  #Contact_us form {
+    width: 90%;
+  }
+
+  #Contact_us .container .content .part2 {
+    margin-bottom: 0px;
+  }
+
+  #Contact_us .container .content .part1,
+  #Contact_us .container .content .part2 {
+    width: 50%;
+  }
+
+  #Contact_us .container .content .part2 .map {
+    width: 90%;
+  }
+
+}
+
+@media (min-width: 1178px) and (max-width: 1300px) {
+
+  /* Navbar */
+  header nav .container .part-left {
+    width: 25%;
+  }
+
+  #Services .container .servicesContainer .service {
+    width: calc(100% / 5);
+  }
+
+  #Services .container .servicesContainer .service .box {
+    max-width: 200px;
+  }
+
+  /* Section_Classes */
+  #Classes .container .classContent .item {
+    width: calc(100%/3);
+  }
+
+  #Trainers .container .trainersContainer {
+    gap: 0;
+  }
+
+  #Trainers .container .trainersContainer .trainer {
+    width: 50%;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box {
+    margin: 15px auto;
+    max-width: 350px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+
+  /* Navbar */
+  header nav .container .part-left {
+    width: 25%;
+  }
+
+  #Services .container .servicesContainer .service {
+    width: calc(100% / 5);
+  }
+
+  #Services .container .servicesContainer .service .box {
+    height: 275px;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
+    font-size: 14px;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerName h3 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1600px) {
+
+  /* Navbar */
+  header nav .container .part-left {
+    width: 25%;
+  }
+
+  #Services .container .servicesContainer .service {
+    width: calc(100% / 5);
+  }
+
+  /* Section_Classes */
+  #Classes .container .classContent .item {
+    width: calc(100% / 3);
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
+    font-size: 12px;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerName h3 {
+    font-size: 24px;
+  }
+
+  #Trainers .container .trainersContainer .trainer .box .trainerMedia {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}

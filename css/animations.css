@@ -1,6 +1,6 @@
 @keyframes light {
     0%{
-        background-color: var(--accent-color);
+        background-color: var(--red);
     }
     100%{
         background-color: #acacac;
