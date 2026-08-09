@@ -12,7 +12,6 @@ html {
 body {
   font-family: "Roboto", sans-serif;
   overflow-y: auto;
-
 }
 
 main {
@@ -61,6 +60,7 @@ img {
 .container {
   width: 85%;
   margin: auto;
+  max-width: 1350px;
 }
 
 #upToTop {

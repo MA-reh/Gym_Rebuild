@@ -352,7 +352,7 @@ input:checked+main #Services .container .servicesContainer .service .box .imgCon
   border-radius: 20px;
   left: 50%;
   width: 95%;
-  transform: translateX(-50%);
+  transform: translate(-50%, 0);
   color: var(--text-color);
   text-align: center;
   padding: 10px 5px;
@@ -363,7 +363,7 @@ input:checked+main #Services .container .servicesContainer .service .box .imgCon
 }
 
 #Classes .container .classContent .item .card:hover .info {
-  bottom: -35px;
+  transform: translate(-50%, 15px);
 }
 
 #Classes .container .classContent .item .card .info .className {
@@ -1012,6 +1012,6 @@ footer p span {
 
 input:checked+main footer p span {
   text-shadow: 0px 0px 10px #868686;
-  -webkit-text-stroke-width: .3px;
-  -webkit-text-stroke-color: #0026ff;
+  -webkit-text-stroke-width: .2px;
+  -webkit-text-stroke-color: #1900ff;
 }
