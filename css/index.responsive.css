@@ -147,7 +147,12 @@
   }
 
   #FeedBack .container .plates-grid {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+
+  #FeedBack .container .plate {
+    width: calc(100%/1);
   }
 
   #FeedBack .container .fb-stats-row {
@@ -277,9 +282,6 @@
   }
 
   /*feedback*/
-  #FeedBack .container .plates-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 @media (min-width: 765px) and (max-width: 1300px) {
@@ -349,6 +351,16 @@
     grid-row: span 2;
   }
 
+  #FeedBack .container .plates-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+
+  #FeedBack .container .plate {
+    width: calc(100%/2);
+  }
+
   /* contact */
   #Contact_us form {
     width: 60%;
@@ -412,9 +424,10 @@
   }
 
   /*feedback*/
-  #FeedBack .container .plates-grid {
-    grid-template-columns: repeat(3, 1fr);
+  #FeedBack .container .plate {
+    width: calc(100%/3);
   }
+
 
   /* contact */
   #Contact_us .container .content {

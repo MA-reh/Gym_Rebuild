@@ -784,32 +784,38 @@ input:checked+main #Trainers .container .trainersContainer .trainer .box:hover .
 
 /* ---------- Barbell rail ---------- */
 #FeedBack .container .plates-grid {
-  margin-top: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
 #FeedBack .container .plate {
+  width: calc(100%/3);
+}
+
+#FeedBack .container .plate .item {
   background: rgba(255, 255, 255, 0.612);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-shadow: 0 20px 60px -20px rgba(53, 29, 29, 0.15);
+  padding: 32px 24px;
   border: 1px solid var(--red-border);
   border-radius: 16px;
-  padding: 32px 24px;
+  max-width: 400px;
+  width: 95%;
+  margin: auto;
   transition:
     transform 0.3s ease-in-out,
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-#FeedBack .container .plate:hover {
+#FeedBack .container .plate .item:hover {
   transform: translateY(-10px) rotate(-2deg);
   box-shadow: 0 30px 40px -15px rgba(15, 3, 3, 0.25);
 }
 
-#FeedBack .container .plate:nth-child(2):hover {
+#FeedBack .container .plate:nth-child(2) .item:hover {
   transform: translateY(-10px) rotate(2deg);
 }
 
