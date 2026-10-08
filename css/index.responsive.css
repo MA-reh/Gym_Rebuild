@@ -103,7 +103,6 @@
   }
 
   #Services .container .servicesContainer .service .box {
-    height: auto;
     max-width: 290px;
     margin: auto;
   }
@@ -239,13 +238,13 @@
   }
 
   #Services .container .servicesContainer .service .box {
-    max-width: 240px;
-    height: 250px;
+    max-width: 280px;
+    width: 90%;
   }
 
   /* Section_Classes */
   #Classes .container .classContent .item {
-    width: 100%;
+    width: 70%;
     margin: auto;
     margin-bottom: 50px;
 
@@ -311,7 +310,7 @@
   }
 
   #Services .container .servicesContainer .service .box {
-    max-width: 220px;
+    max-width: 250px;
   }
 
   /* Section_Classes */
@@ -461,11 +460,7 @@
   }
 
   #Services .container .servicesContainer .service {
-    width: calc(100% / 5);
-  }
-
-  #Services .container .servicesContainer .service .box {
-    max-width: 200px;
+    width: calc(100% / 4);
   }
 
   /* Section_Classes */
@@ -496,11 +491,7 @@
   }
 
   #Services .container .servicesContainer .service {
-    width: calc(100% / 5);
-  }
-
-  #Services .container .servicesContainer .service .box {
-    height: 275px;
+    width: calc(100% / 4);
   }
 
   #Trainers .container .trainersContainer .trainer .box .trainerSubTracks .track {
@@ -527,7 +518,7 @@
   }
 
   #Services .container .servicesContainer .service {
-    width: calc(100% / 5);
+    width: calc(100% / 4);
   }
 
   /* Section_Classes */

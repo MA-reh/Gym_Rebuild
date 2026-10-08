@@ -1,8 +1,9 @@
 @keyframes light {
-    0%{
+    0% {
         background-color: var(--red);
     }
-    100%{
+
+    100% {
         background-color: #acacac;
     }
 }
@@ -17,3 +18,20 @@
     }
 }
 
+@keyframes animationHeader1 {
+    0% {
+        top: -25%;
+    }
+
+    40% {
+        top: 40%;
+    }
+
+    60% {
+        top: 25%;
+    }
+
+    100% {
+        top: 110%;
+    }
+}
